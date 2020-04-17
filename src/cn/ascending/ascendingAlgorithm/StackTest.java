@@ -6,13 +6,13 @@ public class StackTest {
 
     public static void main(String[] args) {
 //        Stack<Integer> stack = new Stack<Integer>();
-//        //add value to stack
+//        //1:add value to stack
 //        stack.push(1);
 //        stack.push(2);
 //        System.out.println(stack);
-//        //view the object at the top of stack
+//        //2:view the object at the top of stack
 //        System.out.println(stack.peek());
-//        //Remove the object at the top of the stack and return the object as the value of this function
+//        //3:Remove the object at the top of the stack and return the object as the value of this function
 //        System.out.println(stack.pop());
 //        System.out.println("to get the first element in stack: "+stack.get(0));
 //        System.out.println(stack);

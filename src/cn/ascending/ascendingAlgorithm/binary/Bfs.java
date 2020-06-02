@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 /*
-*  Node->Left->Right
+*  Node->Left->Right   bfs:Breadth First Search
 * */
 public class Bfs {
     public List<List<Integer>> largestValues(TreeNode root){
@@ -20,7 +20,7 @@ public class Bfs {
             int size=queue.size();
             List<Integer> list=new ArrayList<>();
             for(int i=0;i<size;i++){
-                TreeNode node=queue.poll();
+                TreeNode node=queue.poll();//get element and delete it from queue
                 list.add(node.val);
                 if(node.left!=null){
                     queue.offer(node.left);

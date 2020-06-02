@@ -1,4 +1,4 @@
-package cn.ascending.day02;
+package cn.ascending.java65.day02;
 
 // How to Count number of words in the String?
 public class test05 {

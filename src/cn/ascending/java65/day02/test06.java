@@ -1,4 +1,4 @@
-package cn.ascending.day02;
+package cn.ascending.java65.day02;
 
 //How to remove all the white-spaces in the String?
 public class test06 {

@@ -1,4 +1,4 @@
-package cn.ascending.day01;
+package cn.ascending.java65.day01;
 
 import java.io.BufferedReader;
 import java.io.IOException;

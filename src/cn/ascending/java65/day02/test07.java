@@ -1,4 +1,4 @@
-package cn.ascending.day02;
+package cn.ascending.java65.day02;
 
 import java.util.Scanner;
 

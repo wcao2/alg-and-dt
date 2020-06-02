@@ -12,8 +12,8 @@ public class Bfsway {
         List<Integer> res=new ArrayList<>();
         if(root==null) return res;
 
-        Queue<TreeNode> queue=new LinkedList<>();
-        queue.offer(root);
+        Queue<TreeNode> queue=new LinkedList<>();//LinkedList类实现了Queue接口
+        queue.offer(root);//添加元素
         while(!queue.isEmpty()){
             int size=queue.size();
             int max=Integer.MIN_VALUE;
@@ -21,7 +21,7 @@ public class Bfsway {
                 //get the first element and delete it from queue
                 TreeNode treeNode=queue.poll();
                 max=Math.max(max,treeNode.val);
-                //
+                //添加下一层元素
                 if(treeNode.left!=null) queue.offer(treeNode.left);
                 if(treeNode.right!=null) queue.offer(treeNode.right);
             }

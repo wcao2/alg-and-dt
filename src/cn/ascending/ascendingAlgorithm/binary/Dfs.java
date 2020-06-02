@@ -3,7 +3,7 @@ package cn.ascending.ascendingAlgorithm.binary;
 
 import cn.ascending.ascendingAlgorithm.support.TreeNode;
 
-public class Dfs {
+public class Dfs {//Depth first search
     /*
      *  1: preorder: Node->Left->Right
      * */
@@ -54,9 +54,9 @@ public class Dfs {
         left1.left=new TreeNode(3);
         left1.right=new TreeNode(2);
         right1.right=new TreeNode(2);
-//        Dfs.preOrder(root);
-//        Dfs.inOrder(root);
-        PostOrder(root);
+        //Dfs.preOrder(root);
+        //Dfs.inOrder(root);
+         PostOrder(root);
     }
 }
 

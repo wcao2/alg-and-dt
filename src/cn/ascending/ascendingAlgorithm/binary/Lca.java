@@ -4,7 +4,7 @@ package cn.ascending.ascendingAlgorithm.binary;
 import cn.ascending.ascendingAlgorithm.support.TreeNode;
 
 import java.util.*;
-
+//Given a binary tree, find the lowest common ancestor of two given nodes in the tree.
 /*
 *   1:Start from the root node and traverse the tree.
     2:Until we find p and q both, keep storing the parent pointers in a dictionary.
@@ -22,7 +22,7 @@ public class Lca {
         parent.put(root,null);
         stack.push(root);
 
-        //Iterate until find both p and q
+        //Iterate until find both p and q    (没有包含p或者没有包含q)
         while(!parent.containsKey(p)||!parent.containsKey(q)){
             //remove and return the first node in stack
             TreeNode node=stack.pop();

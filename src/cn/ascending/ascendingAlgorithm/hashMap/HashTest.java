@@ -16,7 +16,7 @@ public class HashTest {
 
         Integer value=hm.get(dk);
         System.out.println("3: "+value);
-    }
+      }
 
     private static Map<DataKey,Integer> getAllData(){
         Map<DataKey,Integer> hm=new HashMap<>();

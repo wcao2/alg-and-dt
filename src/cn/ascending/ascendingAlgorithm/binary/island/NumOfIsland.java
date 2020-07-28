@@ -1,5 +1,6 @@
 package cn.ascending.ascendingAlgorithm.binary.island;
 
+//1: island  0: water
 public class NumOfIsland {
 
     private int numlands(char[][] grid){
@@ -12,21 +13,17 @@ public class NumOfIsland {
             for(int x=0;x<n;++x){
                 if(grid[y][x]=='1'){
                     ++ans;
-                    dfs(grid,x,y,n,m);
+                    dfs(grid,x,y,n,m);//x y 坐标  n:矩阵长度  m:矩阵宽度
                 }
             }
         }
         return ans;
     }
 
-    //把相邻的1全变成0
+    //把已经查到的1全变成0
     private void dfs(char[][] grid,int x,int y,int n,int m){
         if(x<0||y<0||x>=n||y>=m||grid[y][x]=='0') return;
-        grid[y][x]='0';
-        dfs(grid,x+1,y,n,m);
-        dfs(grid,x-1,y,n,m);
-        dfs(grid,x,y+1,n,m);
-        dfs(grid,x,y-1,n,m);
+        grid[y][x]=0;
     }
 
     public static void main(String[] args) {

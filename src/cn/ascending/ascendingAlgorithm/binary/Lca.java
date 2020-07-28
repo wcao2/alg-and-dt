@@ -28,7 +28,7 @@ public class Lca {
             TreeNode node=stack.pop();
             //traversing the tree, keep saving the parent pointers
             if(node.left!=null){
-                parent.put(node.left,node);//children,parent
+                parent.put(node.left,node);//children,itself
                 stack.push(node.left);//put the leaf ele to stack
             }
             if(node.right!=null){
@@ -42,11 +42,11 @@ public class Lca {
         //process all ancestors for node p using parent pointers
         while(p!=null){
             ancestors.add(p);
-            p=parent.get(p);
+            p=parent.get(p);//get p's all ancestor include itself
         }
         //the first ancestor of q which appears in p's ancestor(set() ), is their lowest common ancestor
         while(!ancestors.contains(q))
-            q=parent.get(q);
+            q=parent.get(q);//get the parent of q and set it to q
         return q;
     }
 }

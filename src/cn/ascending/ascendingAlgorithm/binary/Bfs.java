@@ -11,16 +11,17 @@ import java.util.Queue;
 *  Node->Left->Right   bfs:Breadth First Search
 * */
 public class Bfs {
-    public List<List<Integer>> largestValues(TreeNode root){
+    public static List<List<Integer>> largestValues(TreeNode root){
         Queue<TreeNode> queue=new LinkedList<>();
         List<List<Integer>> result=new ArrayList<>();
         queue.offer(root);
 
-        while(!(queue.isEmpty())){
+        while(!(queue.isEmpty())){//if the queue is not empty
             int size=queue.size();
             List<Integer> list=new ArrayList<>();
             for(int i=0;i<size;i++){
                 TreeNode node=queue.poll();//get element and delete it from queue
+                System.out.println(node.val);
                 list.add(node.val);
                 if(node.left!=null){
                     queue.offer(node.left);
@@ -50,5 +51,6 @@ public class Bfs {
         left1.left=new TreeNode(3);
         left1.right=new TreeNode(2);
         right1.right=new TreeNode(2);
+        Bfs.largestValues(root);
     }
 }

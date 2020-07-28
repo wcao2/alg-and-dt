@@ -2,7 +2,7 @@ package cn.ascending.ascendingAlgorithm.binary.island;
 
 /*
 *   用DFS算法实现每个区域的面积，这里利用递归实现，计算过的陆地则变为0；
-    遍历图中所有的元素，记录当前最大的面积
+    遍历图中所有的元素，记录当前最大的面积   1:陆地 0:海水
 * */
 public class MaxNumOfIsland {
     private int maxAreaOfLand(int[][] grid){

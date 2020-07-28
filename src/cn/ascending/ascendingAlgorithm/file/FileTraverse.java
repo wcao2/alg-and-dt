@@ -4,7 +4,8 @@ import java.io.File;
 
 public class FileTraverse {
     public static void main(String[] args) {
-        File[] files=new File("C:/").listFiles();
+        File[] files=new File("/home/weicao/Documents/Zoom").listFiles();
+        System.out.println(files);
         showFiles(files);
     }
 

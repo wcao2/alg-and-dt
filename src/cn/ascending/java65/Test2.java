@@ -15,7 +15,7 @@ public class Test2 {
         list1.add(1);
         list1.add(2);
         List<Integer> r=Test2.someFunc(list1);
-        System.out.println(r.get(0));
+        System.out.println(r.get(1));
     }
 
     public static List<Integer> someFunc(final List<Integer> nums){

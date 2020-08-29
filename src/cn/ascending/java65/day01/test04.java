@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class test04 {
     public static void main(String[] args) {
         boolean result=false;
-        String inputStr="Alve i@wsom";
+        String inputStr="  Alvi@wsom";
         System.out.println(inputStr);
 
         //todo

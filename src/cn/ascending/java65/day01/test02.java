@@ -30,7 +30,7 @@ public class test02 {
 
         for(i=0;i<length;i++){
             c=str.charAt(i);
-            if(ht.get(c)==1){
+            if(ht.get(c)==1){//first one appears once
                 return c;
             }
         }

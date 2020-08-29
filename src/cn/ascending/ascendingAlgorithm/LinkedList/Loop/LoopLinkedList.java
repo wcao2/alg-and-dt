@@ -5,17 +5,21 @@ package cn.ascending.ascendingAlgorithm.LinkedList.Loop;
 import cn.ascending.ascendingAlgorithm.support.LinkedListNode;
 
 //judge if it is loop or not
+//Write a function detectAndCountLoop() that checks whether a given Linked List contains loop and
+// if loop is present then returns count of nodes in loop. Write a function detectAndCountLoop() that
+// checks whether a given Linked List contains loop and if loop is present then returns count of nodes in loop.
 public class LoopLinkedList {
     public boolean checkLoop(LinkedListNode node){
         LinkedListNode quick=node.next.next;
         LinkedListNode slow=node.next;
 
         while(quick!=slow){
-            if(quick!=null){
+            if(quick!=null){// not reach in end
                 quick=quick.next.next;
                 slow=slow.next;
-            }else return true;// is  not Loop
-        }return false;//is Loop
+            }else return false;//fast node arrives the end, so it is not Loop LinkedList
+        }
+        return true;//is Loop
     }
 
     LinkedListNode head;

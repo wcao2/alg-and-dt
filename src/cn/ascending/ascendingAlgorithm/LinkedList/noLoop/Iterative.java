@@ -16,11 +16,12 @@ public class Iterative {
     LinkedListNode head;
 
     //insert a new Node at front of a list
+    // .... node,next ---> node,next从右往左
     public void push(int data){
         LinkedListNode node=new LinkedListNode(data);
         //make next of new Node as head; last node address give to this node next(node next point to the last node)
         node.next=head;
-        //move the head to point to the new Node
+        //move the head to point to the new Node head是最左边第一个node
         head=node;
     }
 

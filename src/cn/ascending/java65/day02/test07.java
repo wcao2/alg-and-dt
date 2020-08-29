@@ -12,6 +12,7 @@ public class test07 {
         num=sc.nextInt();//todo
         sc.close();
         number=num;
+        //System.out.println(373/10);  37
 
         for(;number!=0;number/=10){
             temp=number%10;

@@ -3,9 +3,9 @@ package cn.ascending.java65.day01;
 import java.util.HashSet;
 
 //How to find intersection of two arrays in java?
-//two arrays array1= {1,4,7, 9, 2} arrray2 = {1,7,3,4,5} the answer should be {1,4}
+//two arrays array1= {1,4,7, 9, 2} arrray2 = {1,7,3,4,5} the answer should be {1,4,7}
 public class test03 {
-    public static int[] interaction(int[] num1, int[] num2){
+    public static int[]/*HashSet<Integer>*/ interaction(int[] num1, int[] num2){
         HashSet<Integer> set1=new HashSet<Integer>();
         for(int i:num1){
             set1.add(i);
@@ -24,6 +24,7 @@ public class test03 {
         for (int n:set2){
             result[i++]=n;
         }
+        /*return set2;*/
         return result;
     }
 

@@ -29,6 +29,7 @@ public class Test11supplement {
             }
         }
 
+        //find the letter which only shows once
         for(i=0;i<length;i++){
             c=inputStr.charAt(i);
             if(charCountMap.get(c)==1) return c;

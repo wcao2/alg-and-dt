@@ -7,12 +7,14 @@ import java.util.Arrays;
 * */
 public class Anagram01 {
     public static void main(String[] args) {
-        boolean result=isAnagram("Trump","rumtp1");
+        boolean result=isAnagram("Trump","ru mtp1");
         System.out.println(result);
     }
 
     public static boolean isAnagram(String first,String second){
         //1:convert the two strings to lower case and remove all white space
+        //The string \s is a regular expression that means "whitespace",
+        // and you have to write it with two backslash characters ( "\\s" ) when writing it as a string in Java.
         first=first.replaceAll("\\s","").toLowerCase();
         second=second.replaceAll("\\s","").toLowerCase();
         //2: check the string lengths are equal or not

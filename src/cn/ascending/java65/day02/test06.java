@@ -7,9 +7,11 @@ public class test06 {
     static void sequeeze(String s){
         for(i=0;i<s.length();i++){
             char ch=s.charAt(i);
-            if((i==s.length()-1)&&ch!=' '){
+            /*if((i==s.length()-1)&&ch!=' '){
                 System.out.println(ch);
-            }else if(ch!=' ') if(ch!=' ')System.out.print(ch);
+            }else */if(ch!=' '){
+                System.out.print(ch);
+            }
         }
     }
 

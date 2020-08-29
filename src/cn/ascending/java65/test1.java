@@ -30,6 +30,7 @@ public class test1 {
             }
         }
 
+        //remove all duplicated element from list1
         public static List<Integer> removeDuplicated(ArrayList<Integer> list1, ArrayList<Integer> list2){
             list1.removeAll(list2);
             Iterator<Integer> it=list1.iterator();
@@ -42,11 +43,11 @@ public class test1 {
         }
 
         public static void divideBigNum(ArrayList<Double> list1){
-            int sum=0;
-            Double num=0.00;
+            double sum=0;
+            double num=0.00;
             for (int i=0;i<list1.size();i++){
                 num=list1.get(i)/1000000000;
-                sum=sum+i;
+                sum=sum+num;
             }
             System.out.println("the average of these nums is "+sum/list1.size()+" billion");
         }

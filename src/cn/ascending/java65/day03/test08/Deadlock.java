@@ -34,14 +34,12 @@ public class Deadlock {
         public void run() {
             synchronized (objectLock2) {
                 System.out.println("Thread2: Has  ObjectLock2");
-            /* Adding sleep() method so that
-               Thread 1 can lock ObjectLock1 */
-                try {
-                    Thread.sleep(100);
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(100);
+//                }
+//                catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
                 System.out.println("Thread2: is waiting for ObjectLock 1");
             /*Thread 2 has ObjectLock2
               but waiting for ObjectLock1*/

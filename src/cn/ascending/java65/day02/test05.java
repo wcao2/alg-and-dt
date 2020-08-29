@@ -8,6 +8,7 @@ public class test05 {
         char ch[]=new char[s.length()];
         for(i=0;i<s.length();i++){
             ch[i]=s.charAt(i);
+            // 当不是首字母时 || 后面针对首word
             if(( (i>0)&&(ch[i]!=' ')&&(ch[i-1]==' '))||((ch[0]!=' ')&&(i==0))){
                 c++;
             }

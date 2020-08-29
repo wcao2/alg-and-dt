@@ -27,7 +27,7 @@ public class StackTest {
             if(ele.equals("+")){
                 int top=stack.pop();
                 int newTop=top+stack.peek();
-                stack.push(top);
+                stack.push(top);//加法算完放回去
                 stack.push(newTop);
             }else if(ele.equals("C")){
                 stack.pop();

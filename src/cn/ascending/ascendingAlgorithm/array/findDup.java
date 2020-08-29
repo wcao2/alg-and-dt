@@ -14,7 +14,7 @@ import java.util.List;
 public class findDup {
     public static List<Integer> findDup(int[] nums){
         List<Integer> res=new ArrayList<>();
-        for (int i = 0; i <nums.length ; i++) {//必须减一 不可避免
+        for (int i = 0; i <nums.length ; i++) {//必须减一 不可避免 因为实际的值可能是数组最大的长度
             int index=Math.abs(nums[i])-1;//两个相同的数 得到的新的index应该值相等 ||  index可能为最大的数字=length || 用绝对值因为可能已经调换过了  index [0,3]
             if(nums[index]<0)//说明之前已经被调换为负数==>index已经存在
                 res.add(index+1);//因为index是真实的数字-1过来的 所以还要加1

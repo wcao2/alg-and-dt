@@ -19,6 +19,7 @@ public class Bfs {
         while(!(queue.isEmpty())){//if the queue is not empty
             int size=queue.size();
             List<Integer> list=new ArrayList<>();
+            //遍历每一个层级
             for(int i=0;i<size;i++){
                 TreeNode node=queue.poll();//get element and delete it from queue
                 System.out.println(node.val);

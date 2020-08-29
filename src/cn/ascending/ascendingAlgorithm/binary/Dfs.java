@@ -56,7 +56,7 @@ public class Dfs {//Depth first search
         right1.right=new TreeNode(2);
         //Dfs.preOrder(root);
         //Dfs.inOrder(root);
-         PostOrder(root);
+            PostOrder(root);
     }
 }
 

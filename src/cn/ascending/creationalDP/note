@@ -1,0 +1,6 @@
+what are the design pattern you have known?
+I use factory design pattern to generate connection to database. The connection object is called session in Hibernate.
+I implement sessionFactory which reused the similar attributes, like domain(url), username, password to generate session or we called connection.
+That simplified session construction process.
+Build dp is similar to the factory dp, we can use build dp to generate obj again and again. T
+he only difference is that build dp provides optional argument to generate obj a little bit diff during each build process.

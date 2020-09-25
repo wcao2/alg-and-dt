@@ -1,8 +1,8 @@
-package cn.ascending.java65;
+package cn.ascending.java65.day04;
 
 import java.util.*;
 
-public class test1 {
+public class test12 {
 //    public void addTwoList(List<Integer> list1, List<Integer> list2){
 //        list1.addAll(list2);
 //    }
@@ -63,7 +63,7 @@ public class test1 {
 
         //test1.findSameEle(list1,list2);
 //        test1.findNotSameEle(list1,list2);
-        test1.removeDuplicated(list1,list2);
+        test12.removeDuplicated(list1,list2);
     }
 
 }

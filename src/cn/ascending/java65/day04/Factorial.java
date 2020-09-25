@@ -14,7 +14,7 @@ public class Factorial {
         }
     }
 
-    //2: loop or iterative(i)
+    //2: loop or iterative(迭代)(i)
     public static int f2(int num){
         int result=1;
         if(num==1){

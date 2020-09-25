@@ -1,9 +1,9 @@
-package cn.ascending.java65;
+package cn.ascending.java65.day04;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test2 {
+public class Test13 {
     public static void main(String[] args) {
 //        int[] numbers=new int[]{1,2,3,4};
 //        int result=0;
@@ -14,7 +14,7 @@ public class Test2 {
         List<Integer> list1=new ArrayList<>();
         list1.add(1);
         list1.add(2);
-        List<Integer> r=Test2.someFunc(list1);
+        List<Integer> r= Test13.someFunc(list1);
         System.out.println(r.get(1));
     }
 

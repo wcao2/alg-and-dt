@@ -1,7 +1,9 @@
 package cn.ascending.ascendingAlgorithm.binary;
 
-
+//https://www.jdon.com/51818
 import cn.ascending.ascendingAlgorithm.support.TreeNode;
+
+import java.util.Stack;
 
 public class Dfs {//Depth first search
     /*
@@ -15,6 +17,24 @@ public class Dfs {//Depth first search
         }
         if(n.left!=null) preOrder(n.left);
         if(n.right!=null) preOrder(n.right);
+    }
+
+    //将递归算法转换为迭代算法的一种简单方法是使用堆栈数据结构
+    public static void preOrderWithoutRecursion(TreeNode root) {
+        Stack<TreeNode> nodes = new Stack<>();
+        nodes.push(root);
+
+        while (!nodes.isEmpty()) {
+            TreeNode current = nodes.pop();
+            System.out.printf("%s ", current);
+
+            if (current.right != null) {
+                nodes.push(current.right);
+            }
+            if (current.left != null) {
+                nodes.push(current.left);
+            }
+        }
     }
 
     /*
@@ -54,9 +74,11 @@ public class Dfs {//Depth first search
         left1.left=new TreeNode(3);
         left1.right=new TreeNode(2);
         right1.right=new TreeNode(2);
-        //Dfs.preOrder(root);
+        Dfs.preOrder(root);
+        System.out.println("--------------------");
         //Dfs.inOrder(root);
-            PostOrder(root);
+           // PostOrder(root);
+        Dfs.preOrderWithoutRecursion(root);
     }
 }
 
